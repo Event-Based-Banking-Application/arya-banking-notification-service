@@ -1,0 +1,56 @@
+[
+  {
+    "service": "Notification Service",
+    "issues": [
+      {
+        "task": "Consume UserRegistered event",
+        "description": "Listen to UserRegistered event and trigger appropriate notifications.",
+        "labels": [
+          "notification",
+          "kafka"
+        ]
+      },
+      {
+        "task": "Send welcome email",
+        "description": "Automatically send welcome email on user registration.",
+        "labels": [
+          "notification",
+          "email"
+        ]
+      },
+      {
+        "task": "Send phone/email verification OTP",
+        "description": "Send OTP messages for verification purposes through SMS/email gateways.",
+        "labels": [
+          "notification",
+          "otp"
+        ]
+      },
+      {
+        "task": "Send password reset link/token",
+        "description": "Send password reset tokens via email triggered by the Auth Service.",
+        "labels": [
+          "notification",
+          "security"
+        ]
+      },
+      {
+        "task": "Retry failed sends",
+        "description": "Implement retry logic for failed notification deliveries using Kafka DLQ.",
+        "labels": [
+          "notification",
+          "retry",
+          "kafka"
+        ]
+      },
+      {
+        "task": "Audit notifications sent",
+        "description": "Log notification events for audit and compliance.",
+        "labels": [
+          "notification",
+          "audit"
+        ]
+      }
+    ]
+  }
+]
